@@ -1,0 +1,19 @@
+version note:
+
+Calculate Snapshot.cif using NVT
+
+Action needed:
+- lammps-interface -ff UFF4MOF *.cif
+
+Input:
+- Three forcefield file for RASPA, adsorbate.def
+- Specified force_field_mixing_rules_4lmps.def : atom order as data.$framework (need to duplicate if same atom type exist in data.$framework)
+- CoRE cifs with DDEC charge (default setting, may cause error if you are using other system, easy fix, but count on youself to modify the code)
+- Modify XXX part in Snapshot.py 
+- specify cycles in Snapshot.py
+
+Notes:
+- use the generated supercell from "Rigid calculation"
+- if you change the cores in .sh, please check the number in mof_taxi.py accordingly  (search keyword '16')
+
+

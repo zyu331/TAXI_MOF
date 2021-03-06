@@ -1,0 +1,11 @@
+version note:
+
+Modified by Zhenzi Yu. This version is used for developing highthroughput MC/MD for CoRE MOF, LAMMPS-INTERFACE.
+
+This version is NOT stable, and known error includes:
+1. unphysical volume change
+2. all the mentioned problems in V1.0
+3. data.framework need to be cleaned at each start.
+4. addition problem in the LAMPPS-Restartcombine process, may due to the volume change, may also exist in V0.0
+
+In all, though this version can run without "ERROR", it is not realiable, and zhenzi will fix this on V2.1

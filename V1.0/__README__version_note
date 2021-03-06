@@ -1,0 +1,13 @@
+version note:
+
+Modified by Zhenzi Yu. This version is used for test for MC/MD method. Three example are used: CAU-10, IRMOF-1, ZIF-8 (where ZIF-8 is Jianwen Jiang's ff; CAU-10 and IRMOF-10 is UFF4MOF)
+
+This version is stable, but need lots of manual edit for input file.
+1. framwork.lmps need to corrected according to templet. Because the script is based on len(line) to identify key;
+2. npt.in need to modify according to charge/ dump etc.
+3. VDW / pair need to generate manually (python script available writen by Zhenzi)
+4. driting of COM may occur, not fixed.
+5. specify core both in PACE.sh and mof_taxi.py
+
+
+Also note that, the ff in ZIF-8 example for adsorption need to be rescaled ( please refer to related research)

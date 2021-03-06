@@ -1,0 +1,26 @@
+LAMMPS data file TraPPE kr
+
+1 atoms
+0 bonds
+0 angles
+0 dihedrals
+0 impropers
+
+1 atom types
+0 bond types
+0 angle types
+0 dihedral types
+0 improper types
+
+Masses
+
+   1	83.80	# kr
+
+Pair Coeffs
+
+   1	0.220116017266 	3.691	# CH2_sp2  
+
+Atoms
+
+   1    1       1      0.000    0.000  0.000  0.000
+

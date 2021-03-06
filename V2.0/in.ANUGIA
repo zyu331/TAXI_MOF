@@ -1,0 +1,22 @@
+log             log.ANUGIA append
+units           real
+atom_style      full
+boundary        p p p
+
+pair_style      lj/cut/coul/long 12.500
+bond_style      harmonic
+angle_style     cosine/periodic
+dihedral_style  harmonic
+improper_style  fourier
+kspace_style    ewald 0.000001
+
+special_bonds   lj/coul 0.0 0.0 1.0
+pair_modify     tail yes mix arithmetic
+dielectric      1.0
+box tilt        large
+read_data       data.ANUGIA
+
+#### Atom Groupings ####
+group           fram     id   1:1248
+#### END Atom Groupings ####
+

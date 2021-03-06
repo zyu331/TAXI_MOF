@@ -1,0 +1,9 @@
+version note:
+
+original version provided by Dylan.
+
+can run under pace after 
+1. add file under PACE/bin/
+2. compile the required version of lammps
+
+unknow force field

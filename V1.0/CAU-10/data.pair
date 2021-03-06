@@ -1,0 +1,31 @@
+pair_coeff 1 1 lj/cut 0.06 3.11815 
+pair_coeff 1 2 lj/cut 0.06 3.11815 
+pair_coeff 1 3 lj/cut 0.0793725 3.2745 
+pair_coeff 1 4 lj/cut 0.174069 3.56315 
+pair_coeff 1 5 lj/cut 0.0513809 2.84464
+pair_coeff 1 6 lj/cut 0.0970536 3.0841
+pair_coeff 1 7 lj/cut 0.056736 2.9591
+pair_coeff 2 2 lj/cut 0.06 3.11815 
+pair_coeff 2 3 lj/cut 0.0793725 3.2745 
+pair_coeff 2 4 lj/cut 0.174069 3.56315 
+pair_coeff 2 5 lj/cut 0.0513809 2.84464 
+pair_coeff 2 6 lj/cut 0.0970536 3.0841
+pair_coeff 2 7 lj/cut 0.056736 2.9591
+pair_coeff 3 3 lj/cut 0.105 3.43085 
+pair_coeff 3 4 lj/cut 0.230272 3.7195 
+pair_coeff 3 5 lj/cut 0.0679706 3.00099
+pair_coeff 3 6 lj/cut 0.12839 3.2404
+pair_coeff 3 7 lj/cut 0.075055 3.115425 
+pair_coeff 4 4 lj/cut 0.505 4.00815 
+pair_coeff 4 5 lj/cut 0.149064 3.28964 
+pair_coeff 4 6 lj/cut 0.281567 3.52908 
+pair_coeff 4 7 lj/cut 0.1646 3.04408
+pair_coeff 5 5 lj/cut 0.044 2.57113
+pair_coeff 5 6 lj/cut 0.083112 2.810565
+pair_coeff 5 7 lj/cut 0.048586 2.685565
+pair_coeff 6 6 lj/cut  0.15699	3.05
+pair_coeff 6 7 lj/cut  0.09177 2.925
+pair_coeff 7 7 lj/cut  0.05365	2.80
+
+pair_coeff	1*6	6	coul/long		
+pair_coeff	1*7	7	coul/long	

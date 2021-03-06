@@ -1,0 +1,8 @@
+version note:
+
+Modified by Zhenzi Yu. This version is used for developing highthroughput MC/MD for CoRE MOF, LAMMPS-INTERFACE.
+
+This version is stable, but please check the input file carefully as to be exact consistence with the example.
+
+Three different modules are provided, the .py scripts are different thus are not universal, please refer to the README file in each folder to get more details.
+

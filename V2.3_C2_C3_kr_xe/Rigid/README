@@ -1,0 +1,14 @@
+version note:
+
+Calculate Rigid structure adsorption.
+
+Input:
+- Three forcefield file for RASPA, adsorbate.def 
+- CoRE cifs with DDEC charge (default setting, may cause error if you are using other system, easy fix, but count on youself to modify the code)
+- Modify XXX part in Rigid.py 
+- specify cycles in Rigid.py
+
+Notes:
+- use the generated supercell for Snapshot / MCMD calculation 
+- if you change the cores in .sh, please check the number in mof_taxi.py accordingly  (search keyword '16')
+- Average Chagre! (no worries if adsorbate has no charge as intraframework coul is negelected)
