@@ -1,0 +1,35 @@
+LAMMPS data file TraPPE Ethane
+
+2 atoms
+1 bonds
+0 angles
+0 dihedrals
+0 impropers
+
+1 atom types
+1 bond types
+0 angle types
+0 dihedral types
+0 improper types
+
+Masses
+
+   1	15.00	# CH3_sp3
+
+Bond Coeffs
+
+   1	harmonic 191.764	1.54	# CH2_sp2,CH2_sp2 
+
+Pair Coeffs
+
+   1	0.19474 	3.750	# CH2_sp2  
+
+Atoms
+
+   1    1       1      0.000    0.000  0.000  0.000
+   2	1	1	0.000    1.540  0.000  0.000
+
+Bonds
+
+   1	1	1	2
+

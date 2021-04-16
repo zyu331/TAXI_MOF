@@ -1,17 +1,18 @@
 #number of pseudo atoms
-20
+21
 #type      print   as    chem  oxidation   mass        charge   polarization B-factor radii  connectivity anisotropic anisotropic-type   tinker-type
 H_      yes     H       H       0       1.0079  0.0     0.0     1.0     1.00    0       0       absolute        0
 C_      yes     C       C       0       12.0107 0.0     0.0     1.0     1.00    0       0       absolute        0
 N_      yes     N       N       0       14.0067 0.0     0.0     1.0     1.00    0       0       absolute        0
 O_      yes     O       O       0       15.9994 0.0     0.0     1.0     1.00    0       0       absolute        0
 F_      yes     F       F       0       18.9984 0.0     0.0     1.0     1.00    0       0       absolute        0
-Zn_     yes     Zn      Zn      0       65.3900 0.0     0.0     1.0     1.00    0       0       absolute        0
-Ba_     yes     Ba      Ba      0       137.3270        0.0     0.0     1.0     1.00    0       0       absolute        0
-Cd_     yes     Cd      Cd      0       112.4110        0.0     0.0     1.0     1.00    0       0       absolute        0
-Br_     yes     Br      Br      0       79.9040 0.0     0.0     1.0     1.00    0       0       absolute        0
+Zn     yes     Zn      Zn      0       65.3900 0.0     0.0     1.0     1.00    0       0       absolute        0
+Ba     yes     Ba      Ba      0       137.3270        0.0     0.0     1.0     1.00    0       0       absolute        0
+Cd     yes     Cd      Cd      0       112.4110        0.0     0.0     1.0     1.00    0       0       absolute        0
+Br     yes     Br      Br      0       79.9040 0.0     0.0     1.0     1.00    0       0       absolute        0
 P_      yes     P       P       0       30.9738 0.0     0.0     1.0     1.00    0       0       absolute        0
-Al_     yes     Al      Al      0       26.9815 0.0     0.0     1.0     1.00    0       0       absolute        0
+Al     yes     Al      Al      0       26.9815 0.0     0.0     1.0     1.00    0       0       absolute        0
+Cu	yes	Cu	Cu	0	63.5460	0.0	0.0	1.0	1.00	0	0	absolute	0
 S_	yes	S	S	0	32.0650	0.0	0.0	1.0	1.00	0	0	absolute	0
 Xe	yes	Xe	Xe	0	131.2930	0.0	0.0	1.0	1.00	0	0	absolute	0
 Kr	yes	Kr	Kr	0	83.8000	0.0	0.0	1.0	1.00	0	0	absolute	0

@@ -465,24 +465,20 @@ include   	 data.pair\n""")
             timestep	1
             run_style	verlet
             fix		TETHER1 all momentum 1 linear 1 1 1 angular
-            fix		COM fram recenter INIT INIT INIT
             velocity	all create """+str(temp)+ """ 123456 rot yes mom yes dist gaussian
 ############################### NVT ###########################################################
             dump nvt_struc all custom 10000 fig/nvt_framework_* id type xs ys zs q
             reset_timestep 0
+            dump_modify	nvt_struc element """+" ".join(elementArray)+"""
             fix NVT_ENSEMBLE all nvt temp """+str(temp)+' '+str(temp)+""" 100
+            fix		COM fram recenter INIT INIT INIT
+            timestep 1.0
             run              """+str(md_time)+"""
-            unfix NVT_ENSEMBLE
+            unfix         NVT_ENSEMBLE
+            unfix         COM
             undump nvt_struc\n\n""")
 
-# ############################### NPT ###########################################################
-#             dump npt_struc all xyz 100000 fig/npt_framework_*.xyz
-#             dump_modify	npt_struc element """+" ".join(elementArray)+"""
-#             fix NPT_ENSEMBLE all npt temp """+str(temp)+' '+str(temp)+' 100 tri '+str(pressure)+' '+str(pressure)+' 100'+"""
-#             timestep 1.0
-#             run              """+str(md_time)+"""
-#             unfix         NPT_ENSEMBLE
-#             unfix         COM
+
     f.write("""write_data       """ +str(cyclenumber)+""".lmps""")	
     f.close()
     return
@@ -497,7 +493,7 @@ def run_raspa():
 def run_lammps(cyclenumber,framework,prefix=None, np=None):
     if prefix is None:
         print('Defaulting to the srun --mpi=pmix_v2 prefix(changed by yzz)')
-        prefix=['mpirun', '-np','16']
+        prefix=['mpirun', '-np','8']
     global LAMMPS_EXEC
     f = open('npt.in', 'rb').read()
     p = Popen(prefix + [LAMMPS_EXEC,'-var','fname','npt.in','-e','both'], stdin=PIPE, stdout=PIPE, stderr=PIPE)

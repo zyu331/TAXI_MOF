@@ -30,7 +30,6 @@ for x in f:
         atomType.append(element[3])
 f.close()
 
-
 ### read void ###
 record=False
 f=open('../MCMD/ethene/simulation.input','r')
@@ -61,6 +60,7 @@ for x in f:
         ff[element[0]]=[element[2],element[3]]
 f.close()
     
+
 ### makeJobs ###
 for x in adsorbate:
     myList='['

@@ -1,0 +1,47 @@
+LAMMPS data file TraPPE propane
+
+3 atoms
+2 bonds
+1 angles
+0 dihedrals
+0 impropers
+
+2 atom types
+1 bond types
+1 angle types
+0 dihedral types
+0 improper types
+
+Masses
+
+   1	15.00	# CH3_sp3
+   2	14.01	# CH2_sp3
+
+Bond Coeffs
+
+   1	harmonic 191.764	1.54	# CH2_sp3,CH3_sp3 
+
+Angle Coeffs
+
+   1	harmonic 124.199	114.0	# CH3_sp3,CH2_sp3,CH3_sp3
+
+Pair Coeffs
+
+   1	0.19474 	3.750	# CH3_sp3
+   2	0.11128 	3.960	# CH2_sp3  
+
+Atoms
+
+   1    1       1      0.000    0.000  0.000  0.000
+   2	1	2	0.000    1.540  0.000  0.000
+   3	1	1	0.000    2.166  1.407  0.000
+
+Bonds
+
+   1	1	1	2
+   2	1	2	3
+
+Angles
+
+   1	1	1	2	3
+

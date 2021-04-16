@@ -5,11 +5,11 @@ from hMOFcifGen import DataInput
 
 cwd = os.getcwd()
 temperature = 300
-pressure = 1000000.0   
-adsorbate = "butane"
-f_prefix = "XXXXXX"
+pressure = 1000000
+adsorbate = 'myAd'
+f_prefix = "myFramework"
 r_factor = 1000
-dumpModifyArray=['X','X','X','X','X','X','X']   # see data.$framework atomType Section
+dumpModifyArray=myList  # see data.$framework atomType Section
 
 f_lmps = 'data.'+f_prefix
 f_cif = f_prefix+'.cif'
@@ -27,3 +27,16 @@ for j,x in enumerate(SnapshotList):
     a._read_lammps_data_(f_prefix,x)
     a._out2cif_('cifs',dumpModifyArray)
     os.system('mv cifs/'+f_cif+ ' cifs/'+str(j)+'.cif')
+    
+optList=os.listdir('fig')
+maxNow=0
+for x in optList:
+    line=x.split('_')
+    if line[0]=='opt' and int(line[-1]) > maxNow:
+        maxNow=int(line[-1])
+        strNow=x
+        
+b=DataInput()
+b._read_lammps_data_(f_prefix,x)
+b._out2cif_('cifs',dumpModifyArray)
+os.system('mv cifs/'+f_cif+ ' cifs/'+'relaxed.cif')

@@ -1,0 +1,47 @@
+LAMMPS data file TraPPE CO2
+
+3 atoms
+2 bonds
+1 angles
+0 dihedrals
+0 impropers
+
+2 atom types
+1 bond types
+1 angle types
+0 dihedral types
+0 improper types
+
+Masses
+
+   1	16.00	# O_co2
+   2	12.01	# C_co2
+
+Bond Coeffs
+
+   1	harmonic 2566.76	1.160	# O_co2,C_co2
+
+Angle Coeffs
+
+   1	harmonic 295.41	180.0	# O_co2,C_co2,O_co2
+
+Pair Coeffs
+
+   1	0.15699 	3.05	# O_co2
+   2	0.05365 	2.80	# C_co2
+
+Atoms
+
+   1    1       1       -0.350    0.000  0.000  0.000
+   2	1	2	 0.700    1.160  0.000  0.000
+   3	1	1	-0.350    2.320  0.000  0.000
+
+Bonds
+
+   1	1	1	2
+   2	1	2	3
+
+Angles
+
+   1	1	1	2	3
+

@@ -3,7 +3,7 @@ truncated
 # general rule tailcorrections
 yes
 # number of defined interactions
-20
+21
 # type interaction
 Zn     LENNARD_JONES   62.43252345     2.462566845
 C_      LENNARD_JONES   52.8662497      3.432263815
@@ -17,6 +17,7 @@ Al     LENNARD_JONES   254.2614866     4.009803922
 P_      LENNARD_JONES   153.5638682     3.696078431
 F_      LENNARD_JONES   25.17440462     2.998217469
 S_	LENNARD_JONES	137.9557373	3.596256684
+Cu	LENNARD_JONES	2.517440462	3.114973262
 CH3_sp3        lennard-jones    98.0      3.75
 CH2_sp3        lennard-jones    56.0      3.96
 CH_sp2         LENNARD_JONES   47.0     3.730

@@ -1,0 +1,29 @@
+SimulationType                MonteCarlo
+NumberOfCycles                100000
+NumberOfInitializationCycles  100000
+PrintEvery                    1000
+RestartFile                   no
+
+CutOff                           12.5
+EwaldPrecision                   1e-6
+UseChargesFromCIFFile         yes
+
+Framework                     0
+FrameworkName                 mya
+UnitCells                     1 1 1
+HeliumVoidFraction            myVoid
+ExternalTemperature           300
+ExternalPressure              1000000
+
+Movies                        yes
+WriteMoviesEvery	1000
+
+RemoveAtomNumberCodeFromLabel yes 
+
+Component 0 MoleculeName             Adorbate
+IdealGasRosenbluthWeight 1.0
+TranslationProbability   1.0
+RotationProbability      1.0
+ReinsertionProbability   1.0
+SwapProbability          1.0
+CreateNumberOfMolecules    0

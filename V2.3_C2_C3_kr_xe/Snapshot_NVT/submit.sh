@@ -1,10 +1,10 @@
 #!/bin/sh
 
-#PBS -N Snapshot_XXXXXX
+#PBS -N Snapshot_myAd
 #PBS -A GT-dsholl3-joe
 #PBS -o output
 #PBS -j oe
-#PBS -l nodes=2:ppn=8
+#PBS -l nodes=2:ppn=4
 #PBS -l walltime=20:00:00
 #PBS -l mem=4gb
 #PBS -S /bin/bash

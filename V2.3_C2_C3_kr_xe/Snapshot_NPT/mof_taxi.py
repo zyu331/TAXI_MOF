@@ -493,7 +493,7 @@ def run_raspa():
 def run_lammps(cyclenumber,framework,prefix=None, np=None):
     if prefix is None:
         print('Defaulting to the srun --mpi=pmix_v2 prefix(changed by yzz)')
-        prefix=['mpirun', '-np','16']
+        prefix=['mpirun', '-np','8']
     global LAMMPS_EXEC
     f = open('npt.in', 'rb').read()
     p = Popen(prefix + [LAMMPS_EXEC,'-var','fname','npt.in','-e','both'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
