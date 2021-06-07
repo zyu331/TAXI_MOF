@@ -1,17 +1,13 @@
-# NOTE: This script can be modified for different pair styles 
-# See in.elastic for more info.
-
-# Choose potential
-
+pair_style      lj/cut 12.5
 bond_style      harmonic
-angle_style     hybrid fourier cosine/periodic
+angle_style     hybrid cosine/periodic fourier
 dihedral_style  harmonic
 improper_style  fourier
 
-pair_style      lj/cut 12.500
-pair_modify     tail yes mix arithmetic
+
 special_bonds   lj 0.0 0.0 1.0
-include   	 data.pair
+pair_modify     tail yes mix arithmetic
+include data.pair
 
 # Setup neighbor style
 neighbor 1.0 nsq

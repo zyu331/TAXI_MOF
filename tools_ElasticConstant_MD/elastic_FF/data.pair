@@ -1,0 +1,91 @@
+bond_coeff     1      154.048673        1.928536  # Zn3f2 N_R
+bond_coeff     2      122.127512        2.014866  # Zn3f2 O_2
+bond_coeff     3      153.811316        1.929528  # Zn3f2 N_3
+bond_coeff     4      527.945261        1.044419  # H_ N_3
+bond_coeff     5      357.440381        1.081418  # H_ C_R
+bond_coeff     6      331.069389        1.109401  # H_ C_3
+bond_coeff     7      529.459447        1.043423  # H_ N_R
+bond_coeff     8      663.718927        1.345073  # C_R N_R
+bond_coeff     9      462.655054        1.379256  # C_R C_R
+bond_coeff    10      369.943935        1.486000  # C_R C_3
+bond_coeff    11      714.557442        1.269010  # C_R O_2
+bond_coeff    12      646.680887        1.311940  # C_R O_R
+bond_coeff    13      349.795899        1.514000  # C_3 C_3
+bond_coeff    14      529.724731        1.450075  # C_3 N_R
+bond_coeff    15      528.634538        1.451071  # C_3 N_3
+angle_coeff     1                      fourier      183.483089        0.343737        0.374972        0.281246 # N_R Zn3f2 N_R
+angle_coeff     2                      fourier      155.087435        0.343737        0.374972        0.281246 # N_R Zn3f2 O_2
+angle_coeff     3                      fourier      183.341639        0.343737        0.374972        0.281246 # N_R Zn3f2 N_3
+angle_coeff     4                      fourier      154.973760        0.343737        0.374972        0.281246 # O_2 Zn3f2 N_3
+angle_coeff     5              cosine/periodic      159.573934              -1               3 # H_ C_R N_R
+angle_coeff     6              cosine/periodic      424.885146              -1               3 # N_R C_R N_R
+angle_coeff     7              cosine/periodic      114.578032              -1               3 # H_ C_R C_R
+angle_coeff     8              cosine/periodic      307.398705              -1               3 # C_R C_R N_R
+angle_coeff     9              cosine/periodic      198.274298              -1               3 # C_R C_R C_3
+angle_coeff    10              cosine/periodic      273.097456              -1               3 # C_3 C_R N_R
+angle_coeff    11              cosine/periodic      393.120049              -1               3 # O_2 C_R O_R
+angle_coeff    12              cosine/periodic      266.629989              -1               3 # O_2 C_R C_3
+angle_coeff    13              cosine/periodic      255.317313              -1               3 # O_R C_R C_3
+angle_coeff    14                      fourier      117.318683        0.343737        0.374972        0.281246 # H_ C_3 C_3
+angle_coeff    15                      fourier      170.007371        0.343737        0.374972        0.281246 # H_ C_3 N_R
+angle_coeff    16                      fourier      121.777217        0.343737        0.374972        0.281246 # H_ C_3 C_R
+angle_coeff    17                      fourier      303.594562        0.343737        0.374972        0.281246 # C_3 C_3 N_R
+angle_coeff    18                      fourier      220.229931        0.343737        0.374972        0.281246 # C_3 C_3 C_R
+angle_coeff    19                      fourier      312.548166        0.343737        0.374972        0.281246 # N_R C_3 C_R
+angle_coeff    20                      fourier       75.498766        0.343737        0.374972        0.281246 # H_ C_3 H_
+angle_coeff    21                      fourier      169.780468        0.343737        0.374972        0.281246 # H_ C_3 N_3
+angle_coeff    22                      fourier      303.297032        0.343737        0.374972        0.281246 # C_3 C_3 N_3
+angle_coeff    23              cosine/periodic      398.603153              -1               3 # N_R C_R O_R
+angle_coeff    24                      fourier       51.536168        0.317506        0.313225        0.272502 # Zn3f2 N_3 H_
+angle_coeff    25                      fourier      108.360206        0.317506        0.313225        0.272502 # Zn3f2 N_3 C_3
+angle_coeff    26                      fourier       97.017167        0.317506        0.313225        0.272502 # H_ N_3 H_
+angle_coeff    27                      fourier      144.695053        0.317506        0.313225        0.272502 # H_ N_3 C_3
+angle_coeff    28              cosine/periodic       87.429320              -1               3 # Zn3f2 N_R C_R
+angle_coeff    29              cosine/periodic      240.001032              -1               3 # C_R N_R C_R
+angle_coeff    30              cosine/periodic      108.417222              -1               3 # H_ N_R C_3
+angle_coeff    31              cosine/periodic      125.071223              -1               3 # H_ N_R C_R
+angle_coeff    32              cosine/periodic      213.564697              -1               3 # C_3 N_R C_R
+angle_coeff    33              cosine/periodic       84.412329              -1               3 # Zn3f2 O_2 C_R
+dihedral_coeff     1        1.497136              -1               2 # H_ C_R N_R Zn3f2
+dihedral_coeff     2        0.083333               1               3 # C_R C_R C_3 C_3
+dihedral_coeff     3        2.245703              -1               2 # O_R C_R O_2 Zn3f2
+dihedral_coeff     4        0.066219               1               3 # H_ C_3 C_3 C_R
+dihedral_coeff     5        0.416667              -1               2 # H_ C_3 N_R H_
+dihedral_coeff     6        0.030516               1               3 # H_ C_3 N_3 Zn3f2
+improper_coeff     1        2.000000        1.000000       -1.000000        0.000000               0 # H_ C_R N_R N_R
+pair_coeff 1 1 0.124 2.461553
+pair_coeff 1 2 0.07386474125047755 2.5163434999999996
+pair_coeff 1 3 0.11410521460476729 2.946202
+pair_coeff 1 4 0.11410521460476729 2.946202
+pair_coeff 1 5 0.09249864863877742 2.861121
+pair_coeff 1 6 0.09249864863877742 2.861121
+pair_coeff 1 7 0.08625543461139129 2.7898495
+pair_coeff 1 8 0.08625543461139129 2.7898495
+pair_coeff 2 2 0.044 2.571134
+pair_coeff 2 3 0.0679705818718657 3.0009924999999997
+pair_coeff 2 4 0.0679705818718657 3.0009924999999997
+pair_coeff 2 5 0.05509990925582364 2.9159115
+pair_coeff 2 6 0.05509990925582364 2.9159115
+pair_coeff 2 7 0.05138093031466051 2.84464
+pair_coeff 2 8 0.05138093031466051 2.84464
+pair_coeff 3 3 0.105 3.430851
+pair_coeff 3 4 0.105 3.430851
+pair_coeff 3 5 0.08511756575466665 3.34577
+pair_coeff 3 6 0.08511756575466665 3.34577
+pair_coeff 3 7 0.07937253933193772 3.2744985
+pair_coeff 3 8 0.07937253933193772 3.2744985
+pair_coeff 4 4 0.105 3.430851
+pair_coeff 4 5 0.08511756575466665 3.34577
+pair_coeff 4 6 0.08511756575466665 3.34577
+pair_coeff 4 7 0.07937253933193772 3.2744985
+pair_coeff 4 8 0.07937253933193772 3.2744985
+pair_coeff 5 5 0.069 3.2606889999999997
+pair_coeff 5 6 0.069 3.2606889999999997
+pair_coeff 5 7 0.06434283176858166 3.1894175
+pair_coeff 5 8 0.06434283176858166 3.1894175
+pair_coeff 6 6 0.069 3.2606889999999997
+pair_coeff 6 7 0.06434283176858166 3.1894175
+pair_coeff 6 8 0.06434283176858166 3.1894175
+pair_coeff 7 7 0.06 3.118146
+pair_coeff 7 8 0.06 3.118146
+pair_coeff 8 8 0.06 3.118146
